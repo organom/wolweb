@@ -1,0 +1,87 @@
+﻿body 
+{
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 74%;
+	color: #000;
+	background: #fff;
+}
+
+.logo
+{
+	top:20px;
+	left: 40px;
+	float:left;
+}
+
+.logo img
+{
+	float: right;
+	padding-right: 40px;
+}
+
+.logo h1
+{
+	font-family: Tahoma;
+	font-size: 12pt;
+}
+
+.mainContent
+{
+	padding: 20px 20px 20px 20px;
+}
+
+.bottomLinks
+{
+	position:relative ;
+	padding: 5px;
+	text-align:left;
+}
+
+.header
+{
+	background-color: #e2e2e2;
+	padding: 10px;	
+	padding-left: 5px;
+	font-weight:bolder;
+	width: 120px;
+}
+
+.cell
+{
+	background-color: #f2f2f2;
+	padding: 10px;	
+	
+	font-weight:bolder;
+	text-align:center;
+	
+	width: 120px;
+}
+
+.formWrapper
+{
+	border: 1px solid #e3ebf6;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.formField
+{   
+    clear: both;
+    padding: 0;
+}
+.formLabel,
+.formInputText
+{
+    padding: 0 5px 10px 0;
+}
+.formLabel
+{
+	width: 150px;
+	float: left;
+	text-align: right;
+}
+
+.formInputText input
+{
+	width: 200px;
+}
