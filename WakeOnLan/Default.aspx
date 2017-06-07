@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,7 +6,7 @@
     <head runat="server">
         <meta http-equiv="refresh" content="10"/>
         <link rel="Stylesheet" href="css/default.css" media="all" />
-        <title>Wake On LAN : Status</title>
+        <title>Wake On LAN</title>
     </head>
 
     <body>
@@ -27,13 +27,10 @@
                     SelectCommand="GetOwners" SelectCommandType="StoredProcedure">
                 </asp:SqlDataSource>
                 
-                <a href="http://www.imeta.co.uk" border="0"><img src="images/top_nav.jpg" /></a>
-                <h2>ASP.NET Wake On LAN</h2> 
+                <img src="images/top_nav.jpg" />
+                <h2>Wake On LAN</h2> 
                
                 <br />
-                
-                
-                
 <%--                Show computers added by:    
                 <asp:DropDownList ID="lstOwners" runat="server"  AutoPostBack="True" 
                     DataSourceID="OwnersDataSource" DataTextField="DisplayName" 
@@ -58,13 +55,12 @@
                                 <th class="header">                        
                                     Wake
                                 </th>
-                                <th class="header">                        
-                                    Delete
+                                <th>
                                 </th>
                             </tr                
 
                         </HeaderTemplate>
-                        
+                         
                         <ItemTemplate>
                             <tr class="computer">               
                                 <td class="cell">    
@@ -79,15 +75,15 @@
                                 <td class="cell">                        
                                     <asp:LinkButton ID="lnkWakeUp" runat="server" Visible="False" CommandName="WakeUp">Wake Up</asp:LinkButton>
                                 </td>
-                                <td class="cell">                        
+                                <td class="cell" style="background-color: transparent;">                        
                                     <asp:LinkButton ID="lnkDelete" runat="server" Visible="True" CommandName="Delete">Delete</asp:LinkButton>
                                 </td>
                             </tr>                
                         </ItemTemplate>
                         
                     </asp:DataList>
-
-                   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Legend.aspx">Help </asp:HyperLink> - 
+                    <p></p>
+                   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Legend.aspx">Help</asp:HyperLink>  -  
                    <asp:HyperLink ID="lnkAddNewComputer" runat="server" NavigateUrl="~/AddNewComputer.aspx">Add New Computer</asp:HyperLink>
             </form>
         </div>
