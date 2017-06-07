@@ -27,7 +27,7 @@
                     SelectCommand="GetOwners" SelectCommandType="StoredProcedure">
                 </asp:SqlDataSource>
                 
-                <img src="images/top_nav.jpg" />
+                <!--<img src="images/top_nav.jpg" />-->
                 <h2>Wake On LAN</h2> 
                
                 <br />
